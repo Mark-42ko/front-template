@@ -1,12 +1,22 @@
 {
   "name": "next-front-template",
   "version": "0.1.0",
+  "description": "NextJS Front Template",
+  "author": "Choi Hyeon <esh8876@naver.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mark-42ko/front-template.git"
+  },
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "set-env:dev": "cross-env NODE-ENV=development",
+    "set-env:prod": "cross-env NODE-ENV=production",
+    "build:dev": "yarn set-env:dev && next build",
+    "build:prod": "yarn set-env:prod && next build",
+    "start:dev": "yarn set-env:dev && next dev",
+    "start:prod": "yarn build:prod && next start",
     "lint": "next lint",
+    "test": "jest",
     "major": "yarn version --major",
     "minor": "yarn version --minor",
     "patch": "yarn version --patch"
@@ -14,11 +24,13 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^7.14.1",
     "@typescript-eslint/parser": "^7.14.1",
+    "cross-env": "^7.0.3",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.9.0",
     "eslint-plugin-react-hooks": "^4.6.2",
+    "jest": "^29.7.0",
     "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18"

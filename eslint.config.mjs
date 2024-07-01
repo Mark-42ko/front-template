@@ -6,8 +6,15 @@ import { fixupConfigRules } from "@eslint/compat";
 
 
 export default [
-  {languageOptions: { globals: globals.browser }},
+  { languageOptions: { globals: globals.browser } },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   ...fixupConfigRules(pluginReactConfig),
+  {
+    rules: {
+      "no-unused-vars": "error",
+      "react/react-in-jsx-scope": "off"
+    }
+  }
 ];
+

@@ -6,3 +6,5 @@
 > > 3. Eslint
 > > 4. Yarn
 > > 5. Styled Component
+
+*nvim eslint-lsp 설치 해야함*

@@ -1,0 +1,10 @@
+{
+  "extends": ["next/core-web-vitals", "airbnb", "airbnb-typesciprt"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "react/react-in-jsx-cope": "off"
+  }
+}
+

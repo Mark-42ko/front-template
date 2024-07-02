@@ -13,8 +13,9 @@ export const MainBox = styled.div`
 `;
 
 export const LoginBox = styled.div`
-  width: 40vw;
-  height: 30vw;
+  width: 36vw;
+  height: 26vw;
+  padding: 2vw;
   gap: 36px;
 
   display: flex;
@@ -88,3 +89,4 @@ export const LoginButton = styled.button`
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 1);
 `;
+
